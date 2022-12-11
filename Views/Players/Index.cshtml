@@ -1,0 +1,11 @@
+﻿@model RpgGame.Models.Player
+@{
+    var user = ViewBag.currUser;
+
+
+  
+    <div>Logged in as: @user.Name</div>
+    
+     <a asp-action="CreatePlayer">Create a new character!</a><br />
+     <a asp-action="AccessPlayer">Already have an character? => Choose him!</a>
+}
